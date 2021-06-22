@@ -7,7 +7,7 @@
 
 
 .container{
-    background-image: url('../Assets/bg.jpg');
+    background-image: url('/SnakeMania/Assets/bg.jpg');
     height: 100vh;
     background-size:100vw 100vh;
     display: flex;
