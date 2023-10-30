@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
 
@@ -6,18 +6,22 @@
 
 
 
-.container{
-    background-image: url('/SnakeMania/Assets/bg.jpg');
+.container {
+    background-image: url("/SnakeMania/Assets/image.jpg");
     height: 100vh;
-    background-size:100vw 100vh;
+    background-size: 100vw 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#board{
-    background: linear-gradient(rgb(146, 248, 155),rgb(170, 230, 130));
-    width: 90vmin;
-    height: 92vmin;
+
+#board {
+    background: linear-gradient(rgb(23, 183, 117), rgb(8, 53, 32));
+    width: 50vw;
+    height: 85vh;
+    position: absolute;
+    top: 38px;
+    left: 15%;
     border: 2px solid black;
     display: grid;
     grid-template-columns: repeat(18, 1fr);
@@ -25,39 +29,73 @@
 
 }
 
-.head{
-    background: linear-gradient(purple, green);
-    border: .5px solid white;
+.head {
+    background: rgb(1, 33, 12);
+    border: 1px solid rgb(1, 33, 12);
+
     transform: scale(1.02);
     border-radius: 8px;
 
 
 }
-#scoreBox{
+
+#scoreBox {
+    color: rgb(33, 197, 141);
     position: absolute;
     top: 50px;
     right: 120px;
-    font-size: 39px ;
+    font-size: 39px;
     font-weight: bold;
     font-family: 'New Tegomin', serif;
 }
-#hiScoreBox{
+
+#hiScoreBox {
+    color: rgb(33, 197, 141);
     position: absolute;
     top: 9px;
     right: 120px;
-    font-size: 39px ;
+    font-size: 39px;
     font-weight: bold;
     font-family: 'New Tegomin', serif;
 }
-.snake{
-    background-color: rgb(71, 17, 71);
-    border: .25vmin solid white;
+
+.snake {
+    background-color: rgb(15, 62, 26);
+    border: 1px solid rgb(1, 33, 12);
+
     border-radius: 12px;
 
 }
-.food{
-    background:linear-gradient(rgb(236, 61, 61) ,rgb(247, 6, 138) );
-    border: .25vmin solid black;
-    border-radius: 50%;
+
+.food {
+    background-image: url("/SnakeMania/Assets/food.png");
+    background-size: 33px 26px;
+
+
+    background-repeat: no-repeat;
+
+
+
+
+}
+
+.footer-text {
+    font-family: 'Courier New', Courier, monospace;
+    margin: auto;
+    padding: 5px;
+    text-align: center;
+
+}
+
+footer {
+    font-size: 16px;
+    color: white;
+
+
+    min-width: 100vw;
+    background-color: rgb(4, 44, 10);
+    position: absolute;
+    bottom: 0;
+
 
 }
